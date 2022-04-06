@@ -25,13 +25,13 @@ export default function Cobine() {
 
             <Grid xs={12} lg={12}><Nav /></Grid>
 
-            <Grid container xs={12} lg={12}>
+            <Grid container xs={12} lg={12} >
 
 
                 <Grid item sx={{ padding: "3% 1% 2% 2%" }} xs={12} lg={3.5}>
                     <Table />
                 </Grid>
-                <Grid item sx={{ padding: "3% 1% 2% 2%" }} xs={12} lg={8}>
+                <Grid item sx={{ padding: "3% 1% 2% 2%" }} xs={12} lg={8} >
                     <InterviewSch />
                 </Grid>
 

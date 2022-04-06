@@ -404,17 +404,17 @@ export default function Deep() {
          </Grid>
         {/* <Grid lg={1} /> */}
 
-        <Grid item xs={6} lg={2} sx={{ paddingLeft: '2%',marginLeft:'10px' }}>
+        <Grid item xs={5} lg={2} sx={{ paddingLeft: '2%',marginLeft:'5px' }}>
           <NavLink to={'/postajob'} style={{ textDecoration: 'none' }} > <Button variant='contained'
             sx={{
               borderRadius: '0px', backgroundColor: '#1a50b2', marginTop: '2%',
               ':hover': { color: '#1a50b2', backgroundColor: 'white' }
             }}
-          >Post a Job</Button></NavLink>
+          > + Post a Job</Button></NavLink>
         </Grid>
       </Grid>
       <Grid item container xs={12} display={"flex"} justifyContent={"space-between"} marginTop={'20px'}>
-        <Grid xs={12} lg={4}>
+        <Grid xs={12} lg={4} marginTop={'5px'}>
           <Typography
             sx={{
               fontFamily: "Montserrat",
@@ -431,10 +431,10 @@ export default function Deep() {
           </Typography>
         </Grid>
 
-        <Grid xs={12} lg={8} display={"flex"}>
+        <Grid xs={12} lg={8} display={"flex"} marginTop={'5px'}>
           <Search style={{ border: "1px solid #D6DDEB", width: "500px" }}>
             <SearchIconWrapper>
-              <SearchIcon sx={{ color: "#A8ADB7" }} />
+              <SearchIcon sx={{ color: "#A8ADB7" ,marginTop:'-5px'}} />
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="Search Applicants"
@@ -463,7 +463,7 @@ export default function Deep() {
               backgroundColor: "#E9EBFD",
               color: "#4640DE",
               fontWeight: "700",
-              marginLeft: '1%'
+              marginLeft: '1%',':hover':{backgroundColor:'#E9EBFD'}
             }}
           >
             Pipeline View{" "}
@@ -472,7 +472,7 @@ export default function Deep() {
               sx={{
                 backgroundColor: "#FFFFFF",
                 color: "#4640DE",
-                marginLeft: "9px",
+                marginLeft: "9px",':hover':{backgroundColor:'#FFFFFF'}
               }}
             >
               Table View

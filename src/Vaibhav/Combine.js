@@ -30,7 +30,7 @@ export default function Combine() {
     return (
 
         <Grid container >
-            <Grid item xs={4} lg={8.5} display={"flex"}>
+            <Grid item xs={5} lg={8.5} display={"flex"}>
                 <img src={Nomad} alt={''} style={{ paddingLeft: '2%' }} />
 
                 <Typography variant='body2' fontFamily={'poppins'} fontSize={'28px'} marginTop={'5px'} marginLeft={"1%"}><b>Nomad </b></Typography>
@@ -44,7 +44,7 @@ export default function Combine() {
          </Grid> */}
             <Grid lg={1} />
 
-            <Grid item xs={6} lg={2} sx={{ paddingLeft: '2%' }}>
+            <Grid item xs={5} lg={2} sx={{ paddingLeft: '2%' }}>
                 <NavLink to={'/'} style={{ textDecoration: 'none' }} > <Button variant='contained'
                     sx={{
                         borderRadius: '0px', backgroundColor: '#1a50b2', marginTop: '2%',
