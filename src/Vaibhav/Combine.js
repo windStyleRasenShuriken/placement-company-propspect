@@ -1,4 +1,5 @@
 import React from 'react';
+import Divider from '@mui/material/Divider';
 import { Grid, Box, Card, Typography, Button, IconButton } from '@mui/material';
 import Firsttext from "./Firsttext";
 import Secondmcq from "./Secondmcq";
@@ -11,7 +12,6 @@ import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 import JobInfo from '../images/JobInfo.png';
 
 import DisabledPerks from '../images/DisabledPerks.png';
-import Divider from '../images/Divider.png'
 import sticon from "../images/Stepper Icon.png"
 
 
@@ -88,7 +88,7 @@ export default function Combine() {
                         </Grid>
 
                         <Grid item xs={12} lg={1}>
-                            <img src={Divider} alt='image' />
+                            
                         </Grid>
 
 
@@ -103,7 +103,7 @@ export default function Combine() {
                         </Grid>
 
                         <Grid item xs={12} lg={1}>
-                            <img src={Divider} alt='image' />
+                           
                         </Grid>
 
 
@@ -125,21 +125,27 @@ export default function Combine() {
                 <Grid item container sx={{ padding: "3% 1% 2% 2%" }} xs={12}>
                     <Heading />
                 </Grid>
+                <Divider orientation='horizontal' sx={{ fontSize: "6px", border: "0.5px solid rgba(214, 221, 235, 1)", width: "100%"}} />
                 <Grid item container sx={{ padding: "2% 1% 2% 2%" }} xs={12}>
                     <Firsttext />
                 </Grid>
+                <Divider orientation='horizontal' sx={{ fontSize: "6px", border: "0.5px solid rgba(214, 221, 235, 1)", width: "100%"}} />
                 <Grid item container sx={{ padding: "2% 1% 2% 2%" }} xs={12}>
                     <Secondmcq />
                 </Grid>
+                <Divider orientation='horizontal' sx={{ fontSize: "6px", border: "0.5px solid rgba(214, 221, 235, 1)", width: "100%"}} />
                 <Grid item container sx={{ padding: "2% 1% 2% 2%" }} xs={12}>
                     <Thirdrange />
                 </Grid>
+                <Divider orientation='horizontal' sx={{ fontSize: "6px", border: "0.5px solid rgba(214, 221, 235, 1)", width: "100%"}} />
                 <Grid item container sx={{ padding: "2% 1% 2% 2%" }} xs={12}>
                     <Forthdd />
                 </Grid>
+                <Divider orientation='horizontal' sx={{ fontSize: "6px", border: "0.5px solid rgba(214, 221, 235, 1)", width: "100%"}} />
                 <Grid item container sx={{ padding: "2% 1% 2% 2%" }} xs={12}>
                     <Fifthcc />
                 </Grid>
+                <Divider orientation='horizontal' sx={{ fontSize: "6px", border: "0.5px solid rgba(214, 221, 235, 1)", width: "100%"}} />
 
             </Grid>
             <Grid item container style={{ justifyContent: 'end' }} sx={{ padding: "2% 5% 2% 2%" }} xs={12}>

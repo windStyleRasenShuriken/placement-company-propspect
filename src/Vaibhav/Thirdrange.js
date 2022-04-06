@@ -19,7 +19,7 @@ import Button from "@mui/material/Button";
         return `${value}°C`;
       }
       
-      const minDistance = 10;
+      const minDistance = 100;
       
       export default function Thirdrange() {
         const [values, setValues] = useState({
@@ -33,7 +33,7 @@ import Button from "@mui/material/Button";
 
 
 
-        const [value1, setValue1] = useState([0, 4000]);
+        const [value1, setValue1] = useState([0, 1000]);
       
         const handleChange1 = (event, newValue, activeThumb) => {
           if (!Array.isArray(newValue)) {
@@ -48,7 +48,7 @@ import Button from "@mui/material/Button";
         };
   return (
     <Grid item container spacing={2} sx={{display: 'flex'}}>
-    <Grid item xs={3} sm={5}>
+      <Grid item xs={3} sm={5}>
         <Typography
           sx={{
             fontFamily: "Epilogue",
@@ -68,7 +68,10 @@ import Button from "@mui/material/Button";
             fontStyle: "normal",
             fontWeight: "400",
             fontSize: "18px",
-              width: "300px"
+            width: "auto",
+            justifyContent:"flex-start",
+            alignItems: 'center'
+            
           }}
         >
          Please specify the estimated salary range for the role. *You can leave this blank
@@ -79,7 +82,7 @@ import Button from "@mui/material/Button";
       <Grid item xs={12} sx={{ display: 'flex'}}>
       <div style={{paddingTop:"5%"}}>
  
-        <FormControl  sx={{ width:"100px"}}>
+        <FormControl  sx={{ width:"auto"}}>
           <InputLabel htmlFor="outlined-adornment-amount">Amount</InputLabel>
           <OutlinedInput
             id="outlined-adornment-amount"
@@ -91,7 +94,7 @@ import Button from "@mui/material/Button";
          
         </FormControl>
          <Typography> to</Typography>
-        <FormControl  sx={{  width:"100px" }}>
+        <FormControl  sx={{  width:"auto" }}>
           <InputLabel htmlFor="outlined-adornment-amount">Amount</InputLabel>
           <OutlinedInput
             id="outlined-adornment-amount"
@@ -106,6 +109,8 @@ import Button from "@mui/material/Button";
     </Grid>
       <Box sx={{  display: 'flex', flexWrap: 'wrap' ,width: 300 }}>
       <Slider
+       marks min={10} max={1100} 
+       step={10}
         getAriaLabel={() => "Minimum distance"}
         value={value1}
         onChange={handleChange1}

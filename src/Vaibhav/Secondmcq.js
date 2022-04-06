@@ -19,7 +19,7 @@ export default function Secondmcq() {
               fontSize: "18px",
             }}
           >
-            Job Title
+            Type of Employment
           </Typography>
         
         <br/>
@@ -33,7 +33,7 @@ export default function Secondmcq() {
             //   width: "200px"
             }}
           >
-            Job titles must be describe one position
+            You can select multiple of employment
           </Typography>
         
       </Grid>
